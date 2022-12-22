@@ -26,6 +26,16 @@ const App = () => {
         </Layout>
       </div>
       <div className='footer'>
+        <Typography.Title level={5} style={{ color: '#fff', textAlign: 'center' }}>
+          Parroquia San Judas Tadeo -La Roldós- &copy; 2022 - Todos los derechos reservados - Desarrollado por <a href='https://www.linkedin.com/in/francisco-borja-lobato/' target='_blank' rel='noreferrer'>Francisco Javier Borja Lobato</a>
+        </Typography.Title>
+        <Space>
+          <Link to='/'>Caritas</Link>
+          <Link to='/'>Juan XXIII</Link>
+          <Link to='/'>Catequesis</Link>
+          <Link to='/'>Noticias</Link>
+          <Link to='/'>Contacto</Link>
+        </Space>
       </div>
     </div>
   )
