@@ -1,81 +1,43 @@
 import React from 'react';
-import { Carousel } from 'react-bootstrap';
-
-import roldos from '../images/Roldos.jpeg';
-import concejo from '../images/Concejo.jpeg';
-import cangahua from '../images/Cangahua.jpeg';
-import padua from '../images/Padua.jpeg';
-import velasco from '../images/Velasco.jpeg';
+import Slides from './Carrousel';
+import SmallExample from './Table';
 
 const Home = () => {
   return (
-    <Carousel>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={roldos}
-          alt="First slide"
-        />
-        <Carousel.Caption>
-          <h3>Parroquia San Judas Tadeo</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={concejo}
-          alt="Second slide"
-        />
-
-        <Carousel.Caption>
-          <h3>Capilla San Francisco Xavier</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={cangahua}
-          alt="Third slide"
-        />
-
-        <Carousel.Caption>
-          <h3>Capilla San José de Cangahua</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={padua}
-          alt="Third slide"
-        />
-
-        <Carousel.Caption>
-          <h3>Capilla San Antonio de Padua</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={velasco}
-          alt="Third slide"
-        />
-
-        <Carousel.Caption>
-          <h3>Capilla la hacienda</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
+    <>
+      <div className="Slides">
+        <Slides />
+      </div>
+      <div className="Home-Info">
+        <h1>Horario de Misas</h1>
+        <SmallExample />
+      </div>
+      <div className="Text">
+        <h2>Servicios Religiosos</h2>
+        <div className="Text-Container">
+          <div className="Text-Info">
+            <h3>Confesiones</h3>
+            <p>Jueves y Viernes 18:00</p>
+          </div>
+          <div className="Text-Info">
+            <h3>Bautisos</h3>
+            <p>Sábado 18:30</p>
+          </div>
+          <div className="Text-Info">
+            <h3>Adoración al Santísimo</h3>
+            <p>Jueves 18:00</p>
+          </div>
+          <div className="Text-Info">
+            <h3>Curso Pre-Bautismal</h3>
+            <p>1er y 3er miércoles del mes 19:00</p>
+          </div>
+          <div className="Text-Info">
+            <h3>Curso Pre-Matrimonial</h3>
+            <p>2do domingo cada dos meses</p>
+          </div>
+        </div>
+      </div>
+    </>
   )
 };
 export default Home;

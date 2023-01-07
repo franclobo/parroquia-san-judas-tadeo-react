@@ -78,3 +78,58 @@
   text-align: center;
   padding: 20px;
 }
+
+form,
+.Contact-Info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  input {
+    width: 500px;
+  }
+  .Text {
+    height: 140px;
+    width: 500px;
+  }
+}
+
+.data {
+  list-style: none;
+}
+
+
+button {
+  width: 100px;
+  height: 40px;
+  background-color: var(--background);
+  color: var(--text-primary);
+  border: none;
+  border-radius: 5px;
+  &:hover {
+    background-color: var(--text-hover);
+    color: var(--text-primary);
+  }
+}
+
+.Home-Info,
+.Text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Text-Info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 20px;
+  padding: 10px;
+  align-items: center;
+  font-size: 20px;
+}
+
+Table {
+  font-size: 20px;
+}
